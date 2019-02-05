@@ -20,17 +20,19 @@ class Post extends Model
 
     public function tambahKomen($body)
     {
-	    $this->comments()->create(compact('body'));
+	    $this->comments()->create(compact('sbody'));
     }
 
-    public function tambahKomen1($body)
+    public function tambahKomensss($body)
     {
     
-
-    	Comment::create([
-    		'body' => $body,
-    		'post_id' => $this->id
-		]);
+        // print_r($body);
+        // exit();
+  //   	Comment::create([
+  //   		'body' => $body,
+  //   		'post_id' => $this->id,
+  //           'user_id' => $this->user_id
+		// ]);
 
     }    
 }

@@ -28,7 +28,8 @@
 					{{ csrf_field() }}
 
 					<div class="form-group">
-						<textarea name="body" placeholder="Add your comment here" class="form-control">
+
+						<textarea name="sbody" placeholder="Add your comment here" class="form-control">
 							
 						</textarea>
 					</div>

@@ -41,17 +41,18 @@ class PostsController extends Controller
     {
         $this->validate(request(),[
             'title' => 'required',
-            'body' => 'required',
+            'body' => 'required'
             ]);
 
         auth()->user()->publish(
 
-            new Post(request(['title','body']))
+            new Post(request(['title','body' ]))
 
             );
 
 
-
+// print_r(auth()->user());
+// exit;
         return redirect('/');
         // dd(request(['title','body']));
     }
